@@ -15,7 +15,7 @@ function Canvas() {
 	const rectsIdsArr = useRecoilValue(rectsIdsArrState);
 
 	return (
-		<div className="canvas" id="canvas" style={{ backgroundColor: backgroundColor }}>
+		<div className="canvas" style={{ backgroundColor: backgroundColor }}>
 			{rectsIdsArr.map(id => (
 				<Rectangle key={id} rectId={id} />
 			))}
